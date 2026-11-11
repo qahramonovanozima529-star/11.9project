@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global stil */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #07090E;
+  color: #FFFFFF;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar uslubi */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F131C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563EB;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3B82F6;
+}
+
+/* Numeo matn uslublari */
+.numeo-heading {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.numeo-label {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #8892A4;
+}
+
+/* Kartochka */
+.numeo-card {
+  background: #0F131C;
+  border: 1px solid #1E2535;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+/* Tugma */
+.numeo-btn {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+/* Input */
+.numeo-input {
+  background: #07090E;
+  border: 1px solid #1E2535;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  transition: border-color 0.2s ease;
+}
+
+.numeo-input:focus {
+  outline: none;
+  border-color: #2563EB;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.numeo-input::placeholder {
+  color: #4B5563;
+}
+
+/* Animatsiya */
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Status badge */
+.status-badge {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  display: inline-block;
+  letter-spacing: 0.05em;
+}
+
+/* Table row hover */
+.table-row-hover:hover {
+  background: rgba(37, 99, 235, 0.06);
+  transition: background 0.15s ease;
+}
+
